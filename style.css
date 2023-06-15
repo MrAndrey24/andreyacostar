@@ -1,0 +1,104 @@
+/* Barra de navegacion */
+
+/* Estilos generales */
+body {
+  background-color: #03001c;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.black-color {
+  color: #000000;
+}
+.white-color {
+  color: #ffffff;
+}
+
+.bg-img-1 {
+  background-image: url("/imagenes/background-image-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-color-principal {
+  background-color: #03001c;
+}
+
+.bg-color-secondary {
+  background-color: #6d3d9a;
+}
+
+.bg-color-complementary {
+  background-color: #5b8fb9;
+}
+.bg-color-complementary-2 {
+  background-color: #b6eada;
+}
+
+/* Projects */
+.transparent-card {
+  background-color: transparent;
+}
+
+.transparent-bg {
+  background-color: rgba(
+    3,
+    0,
+    28,
+    0.7
+  ); /* Cambia el valor de opacidad según sea necesario */
+}
+
+/* Animacion Proyectos */
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.wave-animation {
+  animation: wave 2s infinite;
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
