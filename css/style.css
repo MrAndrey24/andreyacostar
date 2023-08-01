@@ -4,7 +4,12 @@
 body {
   background-color: #03001c;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .black-color {
@@ -36,21 +41,35 @@ body {
   background-color: #b6eada;
 }
 
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
 /* Projects */
 
 .custom-btn {
   background-color: #5b8fb9;
   color: #fff;
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.custom-btn:hover {
+  background-color: #4882aa;
 }
 
 .project-card {
-  transition: transform 0.2s ease-in-out;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
 }
 
 .project-card:hover {
-  transform: scale(
-    1.1
-  ); /* Aumenta el tamaño de la tarjeta al pasar el cursor sobre ella */
+  transform: translateY(-5px);
 }
 
 /* Animacion Proyectos */
