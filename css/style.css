@@ -7,7 +7,7 @@
 
 .navbar-collapse {
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 /* Estilos generales */
@@ -21,7 +21,7 @@ section {
 
 h1 {
   font-size: 2.5rem;
-  font-family: 'Rubik Dirt', cursive;
+  font-family: "Rubik Dirt", cursive;
 }
 
 .seccion-oscura {
@@ -37,7 +37,7 @@ h1 {
 .seccion-titulo {
   font-size: 2rem;
   padding: 15px 0;
-  font-family: 'Rubik Dirt', cursive;
+  font-family: "Rubik Dirt", cursive;
 }
 
 .seccion-descripcion {
@@ -250,7 +250,7 @@ h1 {
   max-width: 70%;
   font-size: 20px;
   text-align: center;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: "Share Tech Mono", monospace;
 }
 
 .testimonio-info {
@@ -339,7 +339,7 @@ footer {
   font-size: 1.5rem;
   padding: 20px;
   margin-bottom: 30px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .iconos-redes-sociales a {
