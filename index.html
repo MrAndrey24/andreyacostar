@@ -13,23 +13,20 @@
 
 <body>
 
-    <!-- navbar -->
-
     <header>
-        <nav class="navbar navbar-expand-lg bg-color-secondary">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-color-secondary">
+            <div class="container">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" href="#">Sobre mi</a>
-                        <a class="nav-link" href="#">Habilidades</a>
-                        <a class="nav-link" href="#">Proyectos</a>
-                        <a class="nav-link" href="#">Contacto</a>
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link white-color" href="#">Sobre mi</a>
+                        <a class="nav-item nav-link white-color" href="#">Habilidades</a>
+                        <a class="nav-item nav-link white-color" href="#">Proyectos</a>
+                        <a class="nav-item nav-link white-color" href="#">Contacto</a>
                     </div>
                 </div>
             </div>
@@ -39,20 +36,23 @@
     <main>
 
         <!-- About me -->
-
         <section id="sobre-mi" class="py-5 bg-color-principal">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 white-color">
+                    <div class="col-lg-6">
                         <h2 class="mb-4">Hola soy Andrey</h2>
-                        <p>Desarrollador de software back-end con amplio conocimiento en desarrollo web. Mi enfoque
-                            principal gira en torno a la utilización de tecnologías como .Net C#, Java, Spring Boot,
-                            TypeScript y Python. Amplia experiencia en la creación de servicios web escalables y en la
-                            implementación de lógica de negocio eficiente. Destacó en el trabajo en equipo, en la
-                            resolución
-                            creativa de problemas y en mantenerme actualizado con las últimas tendencias tecnológicas.
-                            Siempre estoy buscando nuevos desafíos para continuar mi crecimiento profesional en este
-                            emocionante campo.
+                        <p class="mb-4">
+                            Desarrollador de software back-end con amplio conocimiento en desarrollo web. Mi enfoque
+                            principal
+                            gira en torno a la utilización de tecnologías como .Net C#, Java, Spring Boot, TypeScript y
+                            Python.
+                            Amplia experiencia en la creación de servicios web escalables y en la implementación de
+                            lógica de
+                            negocio eficiente. Destacó en el trabajo en equipo, en la resolución creativa de problemas y
+                            en
+                            mantenerme actualizado con las últimas tendencias tecnológicas. Siempre estoy buscando
+                            nuevos
+                            desafíos para continuar mi crecimiento profesional en este emocionante campo.
                         </p>
                     </div>
                     <div class="col-lg-6">
@@ -63,39 +63,147 @@
             </div>
         </section>
 
+
         <!-- Skills -->
         <section id="tech-stack" class="py-5">
             <div class="container">
                 <h2 class="mb-4 text-center">Habilidades Tecnicas</h2>
-                <div class="d-flex justify-content-center">
-                    <img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white"
-                        alt=".Net">
-                    <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white"
-                        alt="C#">
-                    <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white"
-                        alt="Java">
-                    <img src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white"
-                        alt="Spring boot">
-                    <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
-                        alt="TypeScript">
-                    <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
-                        alt="Node.js">
-                    <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
-                        alt="Express.js">
-                    <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
-                        alt="Python">
-
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <img src="https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white"
+                            alt=".Net" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white"
+                            alt="C#" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white"
+                            alt="Java" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <img src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white"
+                            alt="Spring boot" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
+                            alt="TypeScript" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
+                            alt="Node.js" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
+                            alt="Express.js" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                            alt="Python" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Projects -->
+        <section id="proyectos" class="py-5">
+            <div class="container">
+                <h2 class="mb-4 text-center">Proyectos</h2>
+                <div class="row">
+                    <!-- project 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card project-card">
+                            <img src="/img/proyecto1.png" class="card-img-top" alt="Proyecto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del Proyecto 1</h5>
+                                <p class="card-text">Descripción del Proyecto 1 Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
+                                <a href="#" class="btn custom-btn">Ver Proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- project 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card project-card">
+                            <img src="/img/proyecto2.png" class="card-img-top" alt="Proyecto 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del Proyecto 2</h5>
+                                <p class="card-text">Descripción del Proyecto 2 Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
+                                <a href="#" class="btn custom-btn">Ver Proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- project 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card project-card">
+                            <img src="/img/proyecto3.png" class="card-img-top" alt="Proyecto 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del Proyecto 3</h5>
+                                <p class="card-text">Descripción del Proyecto 3 Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
+                                <a href="#" class="btn custom-btn">Ver Proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- project 4 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card project-card">
+                            <img src="/img/proyecto4.png" class="card-img-top" alt="Proyecto 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del Proyecto 3</h5>
+                                <p class="card-text">Descripción del Proyecto 3 Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
+                                <a href="#" class="btn custom-btn">Ver Proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- project 5 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card project-card">
+                            <img src="/img/proyecto5.png" class="card-img-top" alt="Proyecto 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Título del Proyecto 3</h5>
+                                <p class="card-text">Descripción del Proyecto 3 Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit.</p>
+                                <a href="#" class="btn custom-btn">Ver Proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Contact -->
+        <section id="contacto" class="py-5 bg-color-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="mb-4">Contáctame</h2>
+                        <!-- Agrega aquí el formulario de contacto o cualquier contenido relacionado con el contacto -->
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Footer -->
+        <footer class="py-4 bg-color-principal">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center white-color">
+                        © 2023, Todos los derechos reservados | Nombre del Sitio Web
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </main>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

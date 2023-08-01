@@ -37,17 +37,20 @@ body {
 }
 
 /* Projects */
-.transparent-card {
-  background-color: transparent;
+
+.custom-btn {
+  background-color: #5b8fb9;
+  color: #fff;
 }
 
-.transparent-bg {
-  background-color: rgba(
-    3,
-    0,
-    28,
-    0.7
-  ); /* Cambia el valor de opacidad según sea necesario */
+.project-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(
+    1.1
+  ); /* Aumenta el tamaño de la tarjeta al pasar el cursor sobre ella */
 }
 
 /* Animacion Proyectos */
