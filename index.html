@@ -4,60 +4,122 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Andrey Acosta R</title>
+    <title>Andrey Acosta R | Desarrollo Back-End</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/icono.png">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-color-secondary">
-            <div class="container">
-                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-item nav-link white-color" href="#">Sobre mi</a>
-                        <a class="nav-item nav-link white-color" href="#">Habilidades</a>
-                        <a class="nav-item nav-link white-color" href="#">Proyectos</a>
-                        <a class="nav-item nav-link white-color" href="#">Contacto</a>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/icono.png" width="50" alt="Logo de la página web">
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonios">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
+        <!-- Hero -->
+        <section class="hero align-items-stretch">
+            <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+                <img class="hero-imagen-desarrollador rounded-circle"
+                    src="img/imagenes-desarrolladores/desarrollador-ejemplo.svg" alt="Foto de Jane Doe">
+                <h1>Hola, soy Andrey Acosta R</h1>
+                <h2>Desarrollo sitios web y escribo artículos sobre programación.</h2>
+            </div>
+            <div class="hero-inferior">
+                <img class="hero-inferior-imagen img-fluid" src="img/hero-inferior.svg"
+                    alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+            </div>
+        </section>
 
         <!-- About me -->
-        <section id="sobre-mi" class="py-5 bg-color-principal">
-            <div class="container">
+        <section id="sobre-mi" class="sobre-mi seccion-oscura">
+            <div class="contenedor">
+                <h2 class="seccion-titulo">Conoce a Andrey Acosta R</h2>
+                <p class="seccion-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio
+                    eget fringilla scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor.
+                    Donec et venenatis nunc, vel hendrerit ex. Vestibulum sapien ipsum, rutrum eget est et, ultricies
+                    sagittis urna. In non volutpat est. Vestibulum diam sapien, ultrices et euismod at, ultrices ut
+                    odio. Nullam in massa et elit ultrices suscipit. Proin lacinia leo ac posuere placerat.</p>
+            </div>
+        </section>
+
+        <!-- Experiance -->
+        <section class="experiencia seccion-clara">
+            <div class="container text-center">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <h2 class="mb-4">Hola soy Andrey</h2>
-                        <p class="mb-4">
-                            Desarrollador de software back-end con amplio conocimiento en desarrollo web. Mi enfoque
-                            principal
-                            gira en torno a la utilización de tecnologías como .Net C#, Java, Spring Boot, TypeScript y
-                            Python.
-                            Amplia experiencia en la creación de servicios web escalables y en la implementación de
-                            lógica de
-                            negocio eficiente. Destacó en el trabajo en equipo, en la resolución creativa de problemas y
-                            en
-                            mantenerme actualizado con las últimas tendencias tecnológicas. Siempre estoy buscando
-                            nuevos
-                            desafíos para continuar mi crecimiento profesional en este emocionante campo.
-                        </p>
+                    <!-- Desarrollo Web -->
+                    <div class="columna col-12 col-md-4">
+                        <i class="bi bi-laptop"></i>
+                        <p class="experiencia-titulo">Desarrollo Web</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla
+                            scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
+                        <div class="badges-contenedor">
+                            <span class="badge text-bg-primary">HTML</span>
+                            <span class="badge text-bg-primary">CSS</span>
+                            <span class="badge text-bg-primary">JavaScript</span>
+                            <span class="badge text-bg-primary">React</span>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="https://media.giphy.com/media/8wjW9AIa7H9enTodxz/giphy.gif" class="img-fluid rounded"
-                            alt="Mi foto">
+                    <!-- Articulos -->
+                    <div class="columna col-12 col-md-4">
+                        <i class="bi bi-laptop"></i>
+                        <p class="experiencia-titulo">Artículos</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla
+                            scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
+                        <div class="badges-contenedor">
+                            <span class="badge text-bg-primary">Escribir</span>
+                            <span class="badge text-bg-primary">Editar</span>
+                            <span class="badge text-bg-primary">Blogs</span>
+                        </div>
+                    </div>
+                    <!-- Estudiante -->
+                    <div class="columna col-12 col-md-4">
+                        <i class="bi bi-laptop"></i>
+                        <p class="experiencia-titulo">Estudiante</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet, odio eget fringilla
+                            scelerisque, sem purus fringilla mauris, nec ultricies nisl nisl sit amet dolor. </p>
+                        <div class="badges-contenedor">
+                            <span class="badge text-bg-primary">freeCodeCamp</span>
+                            <span class="badge text-bg-primary">Desarrollo Web</span>
+                            <span class="badge text-bg-primary">Python</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -65,7 +127,7 @@
 
 
         <!-- Skills -->
-        <section id="tech-stack" class="py-5">
+        <!-- <section id="tech-stack" class="py-5">
             <div class="container">
                 <h2 class="mb-4 text-center">Habilidades Tecnicas</h2>
                 <div class="row justify-content-center">
@@ -103,103 +165,181 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Projects -->
-        <section id="proyectos" class="py-5">
-            <div class="container">
-                <h2 class="mb-4 text-center">Proyectos</h2>
+        <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+            <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+            <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
+            <!-- Galeria de Proyectos -->
+            <div class="container text-center proyectos-contenedor">
                 <div class="row">
-                    <!-- project 1 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card project-card">
-                            <img src="/img/proyecto1.png" class="card-img-top" alt="Proyecto 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Título del Proyecto 1</h5>
-                                <p class="card-text">Descripción del Proyecto 1 Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit.</p>
-                                <a href="#" class="btn custom-btn">Ver Proyecto</a>
+                    <!-- Proyecto 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="proyecto">
+                            <img src="img/proyecto1.png" alt="Proyecto 1">
+                            <div class="overlay">
+                                <p>Proyecto 1</p>
+                                <div class="iconos-contenedor">
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://www.freecodecamp.org/espanol/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- project 2 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card project-card">
-                            <img src="/img/proyecto2.png" class="card-img-top" alt="Proyecto 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Título del Proyecto 2</h5>
-                                <p class="card-text">Descripción del Proyecto 2 Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit.</p>
-                                <a href="#" class="btn custom-btn">Ver Proyecto</a>
+                    <!-- Proyecto 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="proyecto">
+                            <img src="img/proyecto2.png" alt="Proyecto 1">
+                            <div class="overlay">
+                                <p>Proyecto 2</p>
+                                <div class="iconos-contenedor">
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://www.freecodecamp.org/espanol/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- project 3 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card project-card">
-                            <img src="/img/proyecto3.png" class="card-img-top" alt="Proyecto 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Título del Proyecto 3</h5>
-                                <p class="card-text">Descripción del Proyecto 3 Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit.</p>
-                                <a href="#" class="btn custom-btn">Ver Proyecto</a>
+                    <!-- Proyecto 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="proyecto">
+                            <img src="img/proyecto3.png" alt="Proyecto 1">
+                            <div class="overlay">
+                                <p>Proyecto 3</p>
+                                <div class="iconos-contenedor">
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://www.freecodecamp.org/espanol/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- project 4 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card project-card">
-                            <img src="/img/proyecto4.png" class="card-img-top" alt="Proyecto 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Título del Proyecto 3</h5>
-                                <p class="card-text">Descripción del Proyecto 3 Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit.</p>
-                                <a href="#" class="btn custom-btn">Ver Proyecto</a>
+                    <!-- Proyecto 4 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="proyecto">
+                            <img src="img/proyecto4.png" alt="Proyecto 1">
+                            <div class="overlay">
+                                <p>Proyecto 4</p>
+                                <div class="iconos-contenedor">
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://www.freecodecamp.org/espanol/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- project 5 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card project-card">
-                            <img src="/img/proyecto5.png" class="card-img-top" alt="Proyecto 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Título del Proyecto 3</h5>
-                                <p class="card-text">Descripción del Proyecto 3 Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit.</p>
-                                <a href="#" class="btn custom-btn">Ver Proyecto</a>
+                    <!-- Proyecto 5 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="proyecto">
+                            <img src="img/proyecto5.png" alt="Proyecto 1">
+                            <div class="overlay">
+                                <p>Proyecto 5</p>
+                                <div class="iconos-contenedor">
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://www.freecodecamp.org/espanol/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 6 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="proyecto">
+                            <img src="img/proyecto6.png" alt="Proyecto 1">
+                            <div class="overlay">
+                                <p>Proyecto 6</p>
+                                <div class="iconos-contenedor">
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                    <a href="https://www.freecodecamp.org/espanol/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="bi bi-laptop"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <button type="button" class="btn btn-info">
+                    Ver más proyectos
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                </button>
+            </a>
         </section>
 
 
         <!-- Contact -->
-        <section id="contacto" class="py-5 bg-color-secondary">
+        <section id="contacto" class="contacto seccion-oscura">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="mb-4">Contáctame</h2>
-                        <!-- Agrega aquí el formulario de contacto o cualquier contenido relacionado con el contacto -->
+                <div class="container text-center rectangulo d-flex justify-content-evenly">
+                    <div class="row">
+                        <div class="col-12 col-md-4 seccion-titulo">
+                            ¡Hablemos!
+                        </div>
+                        <div class="col-12 col-md-4 descripcion">
+                            Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva
+                            realidad.
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <a href="mailto:andreyacostar@gmail.com">
+                                <button type="button">
+                                    Contacto
+                                    <i class="bi bi-envelope-check-fill"></i>
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="py-4 bg-color-principal">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center white-color">
-                        © 2023, Todos los derechos reservados | Nombre del Sitio Web
-                    </div>
-                </div>
+        <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+            <img class="footer-logo" src="img/icono-blanco.svg" alt="Logo del portafolio">
+            <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+            <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+                <a href="https://twitter.com/freecodecampES" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a href="https://github.com/freeCodeCamp/freeCodeCamp" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/freecodecamp/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="mailto:janedoe@micorreo.com" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-envelope"></i>
+                </a>
             </div>
+            <div class="derechos-de-autor">Creado por Jane Doe (2023) &#169;</div>
         </footer>
 
     </main>
