@@ -9,11 +9,11 @@ const templateID = "template_4gxnm89";
 emailjs.init("D87yrRIrFFult1XnG");
 
 window.onload = function () {
+  // Validate if elements exist
   if (!btnSendEmail || !user_name || !user_email || !user_message) {
     Swal.fire({
       icon: "error",
       title: "One or more elements are missing. Make sure IDs are correct.",
-      text: "Check the form and try again.",
     });
     return;
   }
@@ -21,8 +21,13 @@ window.onload = function () {
   btnSendEmail.addEventListener("click", function (event) {
     event.preventDefault();
 
+    // Validate form
     if (!user_name.value || !user_email.value || !user_message.value) {
-      console.error("One or more input fields are empty.");
+      Swal.fire({
+        icon: "error",
+        title: "One or more fields are empty.",
+        text: "Check the form and try again.",
+      });
       return;
     }
 
