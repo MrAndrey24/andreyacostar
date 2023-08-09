@@ -8,66 +8,69 @@ const templateID = "template_4gxnm89";
 
 emailjs.init("D87yrRIrFFult1XnG");
 
-function showError(title, text) {
+function mostrarError(titulo, texto) {
   Swal.fire({
     icon: "error",
-    title: title,
-    text: text,
+    title: titulo,
+    text: texto,
   });
 }
 
-function showSuccess(title, text) {
+function mostrarExito(titulo, texto) {
   Swal.fire({
     icon: "success",
-    title: title,
-    text: text,
+    title: titulo,
+    text: texto,
   });
 }
 
-function validateForm() {
+function validarFormulario() {
   if (!user_name.value || !user_email.value || !user_message.value) {
-    showError("One or more fields are empty.", "Check the form and try again.");
+    mostrarError("Campos Vacíos", "Por favor completa todos los campos.");
     return false;
   }
 
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailPattern.test(user_email.value)) {
-    showError("Invalid email format.", "Please enter a valid email address.");
+    mostrarError(
+      "Formato de Email Inválido",
+      "Por favor ingresa una dirección de correo válida."
+    );
     return false;
   }
 
   return true;
 }
 
-function sendEmail() {
-  if (!validateForm()) {
+function enviarEmail() {
+  if (!validarFormulario()) {
     return;
   }
 
   emailjs
     .sendForm(serviceID, templateID, document.getElementById("contact-form"))
     .then(function () {
-      showSuccess(
-        "Email sent successfully",
-        "I will contact you as soon as possible"
+      mostrarExito(
+        "Email enviado exitosamente",
+        "Me pondré en contacto contigo lo antes posible."
       );
     })
     .catch(function () {
-      showError("Oops...", "Something went wrong!");
+      mostrarError("Oops...", "Algo salió mal.");
     });
 }
 
 window.onload = function () {
   if (!btnSendEmail || !user_name || !user_email || !user_message) {
-    showError(
-      "One or more elements are missing.",
-      "Make sure IDs are correct."
+    mostrarError(
+      "Elementos Faltantes",
+      "Asegúrate de que los IDs sean correctos."
     );
     return;
   }
 
   btnSendEmail.addEventListener("click", function (event) {
     event.preventDefault();
-    sendEmail();
+    enviarEmail();
   });
 };
