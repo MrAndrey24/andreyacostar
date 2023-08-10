@@ -13,6 +13,13 @@ function showError(title, text) {
     icon: "error",
     title: title,
     text: text,
+    customClass: {
+      popup: "swal2-popup",
+      title: "swal2-title",
+      content: "swal2-content",
+      icon: "swal2-icon",
+      confirmButton: "swal2-confirm",
+    },
   });
 }
 
@@ -21,6 +28,13 @@ function showSuccess(title, text) {
     icon: "success",
     title: title,
     text: text,
+    customClass: {
+      popup: "swal2-popup",
+      title: "swal2-title",
+      content: "swal2-content",
+      icon: "swal2-icon",
+      confirmButton: "swal2-confirm",
+    },
   });
 }
 

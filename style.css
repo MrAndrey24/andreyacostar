@@ -12,6 +12,12 @@
 
 /* Estilos generales */
 
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -60,6 +66,50 @@ h1 {
 
 .texto-blanco {
   color: white;
+}
+
+/* ScrollTop */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#scrollToTopBtn::before {
+  content: "\2191"; /* Código Unicode para la flecha hacia arriba */
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 767px) {
+  #scrollToTopBtn {
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  #scrollToTopBtn::before {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 /* Seccion Hero */
@@ -409,4 +459,118 @@ footer {
   .hero-inferior-imagen {
     max-width: 600px;
   }
+}
+
+/* Ajustes generales para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .seccion-titulo {
+    font-size: 1.5rem;
+    padding: 10px 0;
+  }
+
+  .seccion-descripcion,
+  .seccion-texto {
+    font-size: 1rem;
+  }
+
+  .btn-info {
+    font-size: 1rem;
+    margin: 15px;
+  }
+
+  .proyectos-recientes img {
+    padding: 5px;
+  }
+
+  .testimonio-texto {
+    font-size: 16px;
+  }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media screen and (max-width: 400px) {
+  .hero-principal {
+    padding: 1.5rem;
+  }
+
+  .hero-imagen-desarrollador {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+  }
+
+  .testimonio-imagen {
+    height: 100px;
+    width: 100px;
+  }
+
+  .footer-logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .footer-texto {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .iconos-redes-sociales a {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .iconos-redes-sociales i {
+    font-size: 1.2rem;
+  }
+
+  .derechos-de-autor {
+    font-size: 13px;
+    padding: 15px;
+  }
+}
+
+/* Estilos para los modales de Swal.fire */
+.swal2-popup {
+  font-size: 1.2rem;
+  background-color: #f5f6f7; /* Fondo similar al de tu página */
+  color: black; /* Texto oscuro para contraste */
+  border: none; /* Sin borde */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutíl */
+}
+
+.swal2-title {
+  font-size: 1.5rem; /* Título un poco más grande */
+  color: #007bff; /* Tono de azul similar al de tu botón ScrollTop */
+}
+
+.swal2-content {
+  margin-top: 15px; /* Espacio entre título y contenido */
+}
+
+.swal2-icon {
+  font-size: 2rem; /* Ícono un poco más grande */
+}
+
+.swal2-confirm {
+  font-size: 1.1rem; /* Botón de confirmar un poco más grande */
+  background-color: #007bff; /* Mismo tono de azul para el botón */
+}
+
+.swal2-cancel {
+  font-size: 1.1rem; /* Botón de cancelar un poco más grande */
+  background-color: #f5f6f7; /* Fondo similar al de tu página */
+  color: #007bff; /* Tono de azul para el texto del botón */
+  border: 1px solid #007bff; /* Borde del botón */
+}
+
+.swal2-cancel:hover {
+  background-color: #007bff; /* Cambio de color al pasar el mouse */
+  color: white; /* Texto blanco al pasar el mouse */
 }
