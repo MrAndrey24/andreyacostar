@@ -196,13 +196,9 @@ h1 {
   padding: 40px;
 }
 
-.proyectos-recientes img {
-  max-height: 100%;
-  width: 100%;
-  padding: 10px;
-  border-radius: 10px;
-  display: block;
-  transition: all 0.2s ease;
+.icono-proyecto {
+  font-size: 80px; /* Tamaño del icono */
+  margin: 0 auto 20px; /* Centrar verticalmente */
 }
 
 .proyectos-contenedor {
@@ -230,7 +226,7 @@ h1 {
   position: relative;
 }
 
-.proyecto:hover img {
+.proyecto:hover .icono-proyecto {
   opacity: 0.2;
 }
 
@@ -240,12 +236,19 @@ h1 {
 
 .overlay .iconos-contenedor {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .overlay i {
   color: black;
-  font-size: 60px;
+  font-size: 40px; /* Tamaño del icono en la superposición */
   margin: 10px;
+  transition: color 0.2s ease;
+}
+
+.overlay i:hover {
+  color: #007bff; /* Cambiar el color al pasar el cursor */
 }
 
 /* Articulos */
