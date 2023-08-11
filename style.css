@@ -194,11 +194,13 @@ h1 {
 
 .proyectos-recientes {
   padding: 40px;
+  text-align: center; /* Alinear el contenido al centro */
 }
 
 .icono-proyecto {
-  font-size: 80px; /* Tamaño del icono */
+  font-size: 80px;
   margin: 0 auto 20px; /* Centrar verticalmente */
+  transition: opacity 0.2s ease; /* Transición para opacidad */
 }
 
 .proyectos-contenedor {
@@ -242,13 +244,13 @@ h1 {
 
 .overlay i {
   color: black;
-  font-size: 40px; /* Tamaño del icono en la superposición */
+  font-size: 40px;
   margin: 10px;
   transition: color 0.2s ease;
 }
 
 .overlay i:hover {
-  color: #007bff; /* Cambiar el color al pasar el cursor */
+  color: #007bff;
 }
 
 /* Articulos */
