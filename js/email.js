@@ -40,19 +40,13 @@ function showSuccess(title, text) {
 
 function validateForm() {
   if (!user_name.value || !user_email.value || !user_message.value) {
-    showError(
-      "Campos Vacíos",
-      "Por favor, verifica el formulario e intenta nuevamente."
-    );
+    showError("Empty Fields", "Please check the form and try again.");
     return false;
   }
 
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailPattern.test(user_email.value)) {
-    showError(
-      "Formato de correo inválido",
-      "Por favor ingresa una dirección de correo válida."
-    );
+    showError("Invalid Email Format", "Please enter a valid email address.");
     return false;
   }
 
@@ -68,21 +62,18 @@ function sendEmail() {
     .sendForm(serviceID, templateID, document.getElementById("contact-form"))
     .then(function () {
       showSuccess(
-        "Correo enviado exitosamente",
-        "Me pondré en contacto contigo lo antes posible"
+        "Email Sent Successfully",
+        "I will get in touch with you as soon as possible."
       );
     })
     .catch(function () {
-      showError("Oops...", "¡Algo salió mal!");
+      showError("Oops...", "Something went wrong!");
     });
 }
 
 window.onload = function () {
   if (!btnSendEmail || !user_name || !user_email || !user_message) {
-    showError(
-      "Elementos faltantes",
-      "Asegúrate de que los IDs sean correctos."
-    );
+    showError("Missing Elements", "Make sure the IDs are correct.");
     return;
   }
 

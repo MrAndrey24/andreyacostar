@@ -1,4 +1,4 @@
-/* Barra de navegacion */
+/* Navigation Bar */
 
 .navbar {
   padding: 2rem;
@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 
-/* Estilos generales */
+/* General Styles */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -29,27 +29,27 @@ h1 {
   font-size: 2.5rem;
 }
 
-.seccion-oscura {
+.dark-section {
   color: white;
   background-color: #1b1b32;
 }
 
-.seccion-clara {
+.light-section {
   color: black;
   background-color: #f5f6f7;
 }
 
-.seccion-titulo {
+.section-title {
   font-size: 2rem;
   padding: 15px 0;
 }
 
-.seccion-descripcion {
+.section-description {
   font-size: 1.2rem;
   color: #584e4e;
 }
 
-.seccion-texto {
+.section-text {
   font-size: 1.2rem;
 }
 
@@ -58,15 +58,15 @@ h1 {
   margin: 20px;
 }
 
-.texto-negro {
+.black-text {
   color: black;
 }
 
-.texto-blanco {
+.white-text {
   color: white;
 }
 
-/* ScrollTop */
+/* ScrollTop Button */
 #scrollToTopBtn {
   display: none;
   position: fixed;
@@ -85,7 +85,7 @@ h1 {
 }
 
 #scrollToTopBtn::before {
-  content: "\2191"; /* Código Unicode para la flecha hacia arriba */
+  content: "\2191"; /* Unicode code for the upward arrow */
   font-size: 24px;
   line-height: 40px;
   text-align: center;
@@ -110,7 +110,7 @@ h1 {
   }
 }
 
-/* Seccion Hero */
+/* Hero Section */
 
 .hero {
   background-color: #f5f6f7;
@@ -118,47 +118,47 @@ h1 {
   text-align: center;
 }
 
-.hero-principal {
+.hero-main {
   padding: 3rem;
 }
 
-.hero-imagen-desarrollador {
+.hero-developer-image {
   width: 200px;
   height: 200px;
   margin: 20px;
 }
 
-.hero-principal h2 {
+.hero-main h2 {
   font-size: 1.5rem;
   color: #615151;
 }
 
-/* Sobre mi */
+/* About Me Section */
 
-.sobre-mi {
+.about-me {
   height: 500px;
   padding: 10px;
 }
 
-.sobre-mi .contenedor {
+.about-me .container {
   max-width: 600px;
   text-align: center;
 }
 
-/* Proyectos */
+/* Recent Projects Section */
 
-.proyectos-recientes {
+.recent-projects {
   padding: 40px;
-  text-align: center; /* Alinear el contenido al centro */
+  text-align: center;
 }
 
-.icono-proyecto {
+.project-icon {
   font-size: 80px;
-  margin: 0 auto 20px; /* Centrar verticalmente */
-  transition: opacity 0.2s ease; /* Transición para opacidad */
+  margin: 0 auto 20px;
+  transition: opacity 0.2s ease;
 }
 
-.proyectos-contenedor {
+.projects-container {
   padding-top: 60px;
   margin-bottom: 40px;
 }
@@ -179,19 +179,19 @@ h1 {
   margin-bottom: 0;
 }
 
-.proyecto {
+.project {
   position: relative;
 }
 
-.proyecto:hover .icono-proyecto {
+.project:hover .project-icon {
   opacity: 0.2;
 }
 
-.proyecto:hover .overlay {
+.project:hover .overlay {
   opacity: 1;
 }
 
-.overlay .iconos-contenedor {
+.overlay .icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,33 +208,33 @@ h1 {
   color: #007bff;
 }
 
-/* Contacto */
+/* Contact Section */
 
-.contacto .container {
+.contact .container {
   max-width: 1100px;
   min-height: 200px;
   padding: 20px;
 }
 
-.contacto .rectangulo {
+.contact .rectangle {
   margin-top: -5rem;
   background-color: rgb(13, 110, 253);
   border-radius: 10px;
   box-shadow: 0px 1px 4px 1px white;
 }
 
-.contacto .row {
+.contact .row {
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-.contacto .descripcion {
+.contact .description {
   color: white;
   font-size: 1.2rem;
 }
 
-.contacto button {
+.contact button {
   color: white;
   font-weight: bold;
   background-color: transparent;
@@ -245,22 +245,22 @@ h1 {
   transition: all 0.2s ease-in-out;
 }
 
-.contacto button:hover {
+.contact button:hover {
   background-color: white;
   color: black;
 }
 
-.contacto button i {
+.contact button i {
   color: white;
   font-size: 1.3rem;
   transition: all 0.2s ease-in-out;
 }
 
-.contacto button:hover i {
+.contact button:hover i {
   color: black;
 }
 
-/* Pie de pagina (footer) */
+/* Footer */
 
 footer {
   min-height: 500px;
@@ -272,14 +272,14 @@ footer {
   margin: 10px;
 }
 
-.footer-texto {
+.footer-text {
   font-size: 1.5rem;
   padding: 20px;
   margin-bottom: 30px;
   font-family: "Quicksand", sans-serif;
 }
 
-.iconos-redes-sociales a {
+.social-media-icons a {
   width: 50px;
   height: 50px;
   display: flex;
@@ -292,28 +292,28 @@ footer {
   transition: all 0.2s ease-in;
 }
 
-.iconos-redes-sociales i {
+.social-media-icons i {
   color: white;
   font-size: 1.5rem;
   transition: all 0.2s ease-in;
 }
 
-.iconos-redes-sociales a:hover {
+.social-media-icons a:hover {
   background-color: white;
   border: 2px solid rgb(13, 110, 253);
 }
 
-.iconos-redes-sociales a:hover i {
+.social-media-icons a:hover i {
   color: black;
 }
 
-.derechos-de-autor {
+.copyright {
   font-size: 15px;
   color: #aeaeae;
   padding: 20px;
 }
 
-/* Adaptable (Responsivo) */
+/* Responsive Adjustments */
 
 @media screen and (max-width: 400px) {
   .overlay p {
@@ -332,65 +332,35 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-  .testimonio-imagen {
+  .testimonial-image {
     height: 120px;
     width: 120px;
   }
 
-  .testimonio-texto {
+  .testimonial-text {
     font-size: 18px;
   }
 }
 
 @media screen and (min-width: 700px) {
-  .hero-inferior-imagen {
+  .hero-lower-image {
     max-width: 600px;
   }
 }
 
-/* Ajustes generales para pantallas pequeñas */
-@media screen and (max-width: 767px) {
-  .navbar {
-    padding: 1rem;
-  }
-
-  .seccion-titulo {
-    font-size: 1.5rem;
-    padding: 10px 0;
-  }
-
-  .seccion-descripcion,
-  .seccion-texto {
-    font-size: 1rem;
-  }
-
-  .btn-info {
-    font-size: 1rem;
-    margin: 15px;
-  }
-
-  .proyectos-recientes img {
-    padding: 5px;
-  }
-
-  .testimonio-texto {
-    font-size: 16px;
-  }
-}
-
-/* Ajustes para pantallas muy pequeñas */
+/* Adjustments for Very Small Screens */
 @media screen and (max-width: 400px) {
-  .hero-principal {
+  .hero-main {
     padding: 1.5rem;
   }
 
-  .hero-imagen-desarrollador {
+  .hero-developer-image {
     width: 150px;
     height: 150px;
     margin: 10px;
   }
 
-  .testimonio-imagen {
+  .testimonial-image {
     height: 100px;
     width: 100px;
   }
@@ -400,64 +370,64 @@ footer {
     width: 60px;
   }
 
-  .footer-texto {
+  .footer-text {
     font-size: 1.2rem;
     padding: 10px;
     margin-bottom: 20px;
   }
 
-  .iconos-redes-sociales a {
+  .social-media-icons a {
     width: 40px;
     height: 40px;
     margin: 5px;
   }
 
-  .iconos-redes-sociales i {
+  .social-media-icons i {
     font-size: 1.2rem;
   }
 
-  .derechos-de-autor {
+  .copyright {
     font-size: 13px;
     padding: 15px;
   }
 }
 
-/* Estilos para los modales de Swal.fire */
+/* Styles for Swal.fire Modals */
 .swal2-popup {
   font-size: 1.2rem;
-  background-color: #f5f6f7; /* Fondo similar al de tu página */
-  color: black; /* Texto oscuro para contraste */
-  border: none; /* Sin borde */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutíl */
+  background-color: #f5f6f7;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .swal2-title {
-  font-size: 1.5rem; /* Título un poco más grande */
-  color: #007bff; /* Tono de azul similar al de tu botón ScrollTop */
+  font-size: 1.5rem;
+  color: #007bff;
 }
 
 .swal2-content {
-  margin-top: 15px; /* Espacio entre título y contenido */
+  margin-top: 15px;
 }
 
 .swal2-icon {
-  font-size: 2rem; /* Ícono un poco más grande */
+  font-size: 2rem;
 }
 
 .swal2-confirm {
-  font-size: 1.1rem; /* Botón de confirmar un poco más grande */
-  background-color: #007bff; /* Mismo tono de azul para el botón */
+  font-size: 1.1rem;
+  background-color: #007bff;
 }
 
 .swal2-cancel {
-  font-size: 1.1rem; /* Botón de cancelar un poco más grande */
-  background-color: #f5f6f7; /* Fondo similar al de tu página */
-  color: #007bff; /* Tono de azul para el texto del botón */
-  border: 1px solid #007bff; /* Borde del botón */
+  font-size: 1.1rem;
+  background-color: #f5f6f7;
+  color: #007bff;
+  border: 1px solid #007bff;
 }
 
 .swal2-cancel:hover {
-  background-color: #007bff; /* Cambio de color al pasar el mouse */
-  color: white; /* Texto blanco al pasar el mouse */
+  background-color: #007bff;
+  color: white;
 }
