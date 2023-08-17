@@ -1,7 +1,7 @@
 const downloadBtn = document.getElementById("download-btn");
 
-const cv1Link = "cv/andrey-acosta-cv-english.pdf";
-const cv2Link = "cv/andrey-acosta-cv-spanish .pdf";
+const cv1Link = "cv/Andrey_Acosta_Ramirez_english.pdf";
+const cv2Link = "cv/Andrey_Acosta_Ramirez_spanish.pdf";
 
 downloadBtn.addEventListener("click", function () {
   downloadCV(cv1Link);
